@@ -1,0 +1,38 @@
+{
+ "model": "Llama-3.1-8B-Instruct",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "prompt": 4096,
+ "gen": 256,
+ "kv_budget_gib": 5.95,
+ "rows": [
+  {
+   "backend": "flashinfer-bf16",
+   "batch": 11,
+   "kv_mib_per_seq": 544.0,
+   "ms_per_step": 25.75,
+   "decode_tokens_per_s": 427.1,
+   "prefill_s": 6.1,
+   "pool_grows": 0
+  },
+  {
+   "backend": "exactkv",
+   "batch": 14,
+   "kv_mib_per_seq": 433.5,
+   "ms_per_step": 26.66,
+   "decode_tokens_per_s": 525.1,
+   "prefill_s": 6.6,
+   "pool_grows": 0
+  },
+  {
+   "backend": "exactkv",
+   "batch": 11,
+   "kv_mib_per_seq": 433.5,
+   "ms_per_step": 24.9,
+   "decode_tokens_per_s": 441.9,
+   "prefill_s": 5.2,
+   "pool_grows": 0
+  }
+ ],
+ "throughput_ratio": 1.229,
+ "step_time_ratio_same_batch": 1.034
+}

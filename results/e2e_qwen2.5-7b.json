@@ -1,0 +1,38 @@
+{
+ "model": "Qwen2.5-7B-Instruct",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "prompt": 4096,
+ "gen": 256,
+ "kv_budget_gib": 6.73,
+ "rows": [
+  {
+   "backend": "flashinfer-bf16",
+   "batch": 28,
+   "kv_mib_per_seq": 238.0,
+   "ms_per_step": 26.31,
+   "decode_tokens_per_s": 1064.0,
+   "prefill_s": 12.3,
+   "pool_grows": 0
+  },
+  {
+   "backend": "exactkv",
+   "batch": 36,
+   "kv_mib_per_seq": 189.7,
+   "ms_per_step": 27.52,
+   "decode_tokens_per_s": 1307.9,
+   "prefill_s": 15.3,
+   "pool_grows": 0
+  },
+  {
+   "backend": "exactkv",
+   "batch": 28,
+   "kv_mib_per_seq": 189.7,
+   "ms_per_step": 25.25,
+   "decode_tokens_per_s": 1108.9,
+   "prefill_s": 12.0,
+   "pool_grows": 0
+  }
+ ],
+ "throughput_ratio": 1.229,
+ "step_time_ratio_same_batch": 1.042
+}

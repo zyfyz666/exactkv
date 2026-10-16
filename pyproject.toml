@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exactkv"
+version = "0.1.0"
+description = "Lossless (bit-exact) compressed KV cache for LLM decoding, with decode attention that reads it directly"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+# Tested with torch 2.13 and triton 3.7.1.
+dependencies = ["torch>=2.6", "triton>=3.3"]
+
+[project.optional-dependencies]
+engine = ["transformers>=4.56"]
+bench = ["transformers>=4.56", "flashinfer-python"]
+
+[tool.setuptools]
+packages = ["exactkv"]

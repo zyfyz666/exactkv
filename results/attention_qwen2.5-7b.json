@@ -1,0 +1,58 @@
+{
+ "model": "/media/user/c8185308-e6a0-44f9-999a-9da398745e531/exact_llm_opt/models/Qwen2.5-7B-Instruct",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "rows": [
+  {
+   "B": 1,
+   "T": 32768,
+   "Hq": 28,
+   "Hkv": 4,
+   "kv_bf16_mib": 64,
+   "bits_per_value": 12.7,
+   "flashinfer_us": 106.4,
+   "exactkv_us": 86.8,
+   "reference_us": 117.0,
+   "speedup_vs_flashinfer": 1.226,
+   "bit_identical_to_reference": true
+  },
+  {
+   "B": 1,
+   "T": 131072,
+   "Hq": 28,
+   "Hkv": 4,
+   "kv_bf16_mib": 256,
+   "bits_per_value": 12.69,
+   "flashinfer_us": 342.8,
+   "exactkv_us": 286.3,
+   "reference_us": 360.0,
+   "speedup_vs_flashinfer": 1.197,
+   "bit_identical_to_reference": true
+  },
+  {
+   "B": 8,
+   "T": 8192,
+   "Hq": 28,
+   "Hkv": 4,
+   "kv_bf16_mib": 128,
+   "bits_per_value": 12.72,
+   "flashinfer_us": 200.4,
+   "exactkv_us": 162.3,
+   "reference_us": 207.2,
+   "speedup_vs_flashinfer": 1.235,
+   "bit_identical_to_reference": true
+  },
+  {
+   "B": 32,
+   "T": 4096,
+   "Hq": 28,
+   "Hkv": 4,
+   "kv_bf16_mib": 256,
+   "bits_per_value": 12.75,
+   "flashinfer_us": 343.9,
+   "exactkv_us": 286.6,
+   "reference_us": 359.2,
+   "speedup_vs_flashinfer": 1.2,
+   "bit_identical_to_reference": true
+  }
+ ]
+}
